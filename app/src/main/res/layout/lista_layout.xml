@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#C7D73939"
     android:orientation="vertical"
     tools:context=".listaActivity">
 
@@ -12,20 +13,111 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:gravity="center">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="220dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_margin="10dp"
+                    android:layout_width="190dp"
+                    android:layout_height="225dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/dragon_age" />
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Guerreiro: Se você gosta de ficar na linha de frente."
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- SEGUNDO CARD -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="220dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center_vertical"> <!-- Corrigido o margin vazio que causava erro -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="225dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/dragon_age" />
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mago: Se você prefere atacar de longe com feitiços."
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <ImageView
             android:layout_width="200dp"
-            android:layout_height="112.5dp"
-            android:src="@drawable/dragon_age"
-            android:layout_margin="15dp"/>
+            android:layout_height="250dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/dragon_age" />
+
         <ImageView
-            android:layout_width="250dp"
-            android:layout_height="350dp"
-            android:src="@drawable/skyrim"/>
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/dragon_age" />
 
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/dragon_age" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/dragon_age" />
+
+
+    </LinearLayout>
 
 
 </LinearLayout>

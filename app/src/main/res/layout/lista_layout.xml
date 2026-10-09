@@ -11,6 +11,155 @@
 
 
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="160dp"
+            android:layout_height="250dp"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="12dp"
+           >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/guerreiro" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Guerreiro"
+                    android:textStyle="bold"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card: Mago -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="160dp"
+            android:layout_height="250dp"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="12dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/mago" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Mago"
+                    android:textStyle="bold"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="160dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+
+                        android:layout_width="160dp"
+                        android:layout_height="250dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/arqueiro" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Arqueiro"
+                        android:textAlignment="center" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="200dp"
+                android:layout_height="350dp"
+                android:layout_gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+
+                        android:layout_width="160dp"
+                        android:layout_height="250dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/alquimista" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Alquimista"
+                        android:textAlignment="center" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
@@ -20,8 +169,8 @@
 
 
         <androidx.cardview.widget.CardView
-            android:layout_width="220dp"
-            android:layout_height="300dp"
+            android:layout_width="200dp"
+            android:layout_height="350dp"
             android:layout_gravity="center_vertical"
             android:layout_marginEnd="16dp">
 
@@ -33,26 +182,26 @@
                 android:gravity="center_horizontal">
 
                 <ImageView
-                    android:layout_margin="10dp"
-                    android:layout_width="190dp"
-                    android:layout_height="225dp"
+
+                    android:layout_width="160dp"
+                    android:layout_height="250dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/dragon_age" />
+                    android:src="@drawable/feiticeiro" />
 
                 <TextView
                     android:layout_marginTop="8dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Guerreiro: Se você gosta de ficar na linha de frente."
+                    android:text="Guerreiro"
                     android:textAlignment="center" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!-- SEGUNDO CARD -->
+
         <androidx.cardview.widget.CardView
-            android:layout_width="220dp"
-            android:layout_height="300dp"
-            android:layout_gravity="center_vertical"> <!-- Corrigido o margin vazio que causava erro -->
+            android:layout_width="200dp"
+            android:layout_height="350dp"
+            android:layout_gravity="center_vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -62,60 +211,20 @@
                 android:gravity="center_horizontal">
 
                 <ImageView
-                    android:layout_width="200dp"
-                    android:layout_height="225dp"
+
+                    android:layout_width="160dp"
+                    android:layout_height="250dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/dragon_age" />
+                    android:src="@drawable/lutador" />
 
                 <TextView
                     android:layout_marginTop="8dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Mago: Se você prefere atacar de longe com feitiços."
+                    android:text="Mago"
                     android:textAlignment="center" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="200dp"
-            android:layout_height="250dp"
-            android:layout_margin="15dp"
-            android:src="@drawable/dragon_age" />
-
-        <ImageView
-            android:layout_width="200dp"
-            android:layout_height="250dp"
-            android:layout_margin="15dp"
-            android:src="@drawable/dragon_age" />
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="200dp"
-            android:layout_height="250dp"
-            android:layout_margin="15dp"
-            android:src="@drawable/dragon_age" />
-
-        <ImageView
-            android:layout_width="200dp"
-            android:layout_height="250dp"
-            android:layout_margin="15dp"
-            android:src="@drawable/dragon_age" />
-
 
     </LinearLayout>
 
